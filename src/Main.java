@@ -12,10 +12,10 @@ public class Main {
         int days = today.lengthOfMonth() - today.getDayOfMonth();
         System.out.println(days);
 
-        Year ciao = java.time.Year.of(today.getYear());
-        System.out.println(ciao.length());
+        Year year = java.time.Year.of(today.getYear());
+        System.out.println(year.length());
 
-        int prova = ciao.length()- today.getDayOfYear();
-        System.out.println(prova);
+        int daysDiff = year.length()- today.getDayOfYear();
+        System.out.println(daysDiff);
     }
 }
